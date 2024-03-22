@@ -1,0 +1,39 @@
+:root {
+    --font: "Shadows Into Light", cursive;
+}
+
+
+/*header*/
+header {
+    width: 100%;
+    height: 70px;
+}
+/*light and dark switch*/
+#lightDarkIcon {
+    float: right;
+    width: 50px;
+    margin: 10px;
+}
+
+/*main content*/
+main {
+    width: 100%;
+}
+
+/*opening sticky note/title*/
+
+#title-note {
+    width: 100%;
+    text-align: center;
+    background-image: url(../Images/Sticky\ Note.png);
+    background-position: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: var(--font);
+    padding: 197.5px 0;
+}
+
