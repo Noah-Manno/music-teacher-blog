@@ -1,0 +1,94 @@
+:root {
+    --font: "Shadows Into Light", cursive;
+    --maincolor: #F08C7F;
+}
+
+header {
+    height: 12vh;
+}
+
+main {
+    min-height: 90vh;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: calc(3vw + 3vh);
+    padding: 20px 0 0 50px;
+}
+
+.post-container {
+    flex: 1 0 400px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #F08C7F;
+    margin: 5%;
+    min-width: 270px;
+}
+
+.post-title {
+    font-family: var(--font);
+    font-size: calc(2vw + 2vh);
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+.post-content {
+    font-family: var(--font);
+    font-size: calc(1.5vw + 1.5vh);
+    background-color: white;
+    line-height: 2;
+    padding: 5%;
+    margin: 5%;
+    word-wrap: break-word;
+    min-height: 60px
+}
+
+.post-username {
+    font-size: calc(1vw + 1vh);
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+a {
+display: block;
+position: relative;
+z-index: 3;
+font-family: var(--font);
+color: var(--maincolor);
+font-size: 30px;
+padding: 20px;
+margin-top: 20px;
+background-color: white;
+border-radius: 50px;
+border: 1px dashed var(--maincolor);
+width: 30%;
+}
+
+
+@media only screen and (max-width: 670px) {
+  header {
+    height: 9vh
+  }
+    
+}
+
+@media only screen and (max-width: 265px) {
+
+    h1 {
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+    
+}
