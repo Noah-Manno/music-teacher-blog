@@ -3,7 +3,6 @@
     --maincolor: #F08C7F;
 }
 
-
 /*header*/
 header {
     width: 100%;
@@ -17,6 +16,10 @@ header {
 }
 
 body {
+    background-color: #fdf8ff;
+}
+
+#background {
     background-image: url(../Images/Background.png);
     background-position: center;
     background-size: cover;
@@ -31,6 +34,7 @@ main {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*opening sticky note/title*/
@@ -43,6 +47,7 @@ main {
 }
 
 h1 {
+    margin-right: 25px;
     font-size: 30px;
     font-family: var(--font);
     position: absolute;
