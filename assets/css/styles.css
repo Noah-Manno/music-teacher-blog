@@ -24,6 +24,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /*main content*/
@@ -35,80 +36,4 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/*opening sticky note/title*/
-
-#title-note {
-    flex: 2 0 330px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    margin-right: 25px;
-    font-size: 30px;
-    font-family: var(--font);
-    position: absolute;
-    color: var(--maincolor);
-}
-
-/*Name sticky note/input*/
-
-.input-note {
-    flex: 1 0 230px;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2 {
-    font-size: 30px;
-    font-family: var(--font);
-    position: absolute;
-    padding-bottom: 100px;
-    color: var(--maincolor);
-}
-
-h3 {
-    font-size: calc(3.5vw + 3.5vh);
-    font-family: var(--font);
-    position: absolute;
-    color: var(--maincolor);
-}
-
-.center {
-    justify-content: center;
-}
-
-input {
-    border: 2px solid black;
-    position: absolute;
-    height: 20px;
-    margin-top: 50px;
-}
-
-#main-sticky {
-    width: 100%;
-}
-
-.other-sticky {
-    width: 100%;
-}
-
-.filter {
-    opacity: .9;
-    filter:saturate(50%);
-    filter:contrast(200%);
-}
-
-button {
-    background: none;
-    border: none;
-}
-
-button:active .on-click{
-filter: brightness(130%);
 }
