@@ -24,8 +24,10 @@ submitButton.addEventListener("click", function(event) {
     };
 
     //push copy of object into array
-    userArray.push({...newUserObject});
 
+    if (newUserObject.username !== "" && newUserObject.title !== "" && newUserObject.blog !== "") {
+    userArray.push({...newUserObject});
+    }
     console.log(userArray)
     //update local storage
     let arrayString = JSON.stringify(userArray)

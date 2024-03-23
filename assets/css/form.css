@@ -44,7 +44,7 @@ h3 {
     justify-content: center;
 }
 
-input {
+.input-note input {
     border: 2px solid black;
     position: absolute;
     height: 20px;
@@ -57,6 +57,10 @@ input {
 
 .other-sticky {
     width: 100%;
+}
+
+.message-box {
+    flex: 2 0 330px;
 }
 
 button {
