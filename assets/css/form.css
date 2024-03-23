@@ -59,12 +59,6 @@ input {
     width: 100%;
 }
 
-.filter {
-    opacity: .9;
-    filter:saturate(50%);
-    filter:contrast(200%);
-}
-
 button {
     background: none;
     border: none;

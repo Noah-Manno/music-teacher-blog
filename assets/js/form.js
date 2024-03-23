@@ -41,3 +41,67 @@ submitButton.addEventListener("click", function(event) {
         window.location.href = "file:///Users/noahmanno/bootcamp/music-teacher-blog/blog.html"     
     }
 });
+
+const lightDarkIcon = document.getElementById("lightDarkIcon");
+const backgroundContainer = document.getElementById("background");
+const lightImage = 'url(./assets/Images/Background.png)';
+const darkImage = 'url("./assets/Images/darkModeBackground.png")';
+
+let stickyNotes = document.querySelectorAll('.other-sticky')
+let mainStickyNote = document.getElementById('main-sticky')
+let mainStickyNoteTitle = document.getElementById('music-teacher-blog')
+let inputTitles = document.querySelectorAll('.title-of-inputs')
+
+let openingMode = localStorage.getItem('mode');
+
+if (openingMode === 'moon') {
+    setDarkMode();
+} else {
+    setLightMode();
+};
+
+lightDarkIcon.addEventListener('click', changeLightDarkMode);
+
+function setDarkMode() {
+
+    lightDarkIcon.setAttribute('data-mode', 'moon');
+        let currentMode = lightDarkIcon.getAttribute('data-mode')
+        localStorage.setItem('mode', currentMode)
+        lightDarkIcon.src = "./assets/Images/moon.png";
+        background.style.backgroundImage = darkImage;
+
+        stickyNotes.forEach(notes => {
+            notes.style.filter = "brightness(.1)"
+        });
+
+        inputTitles.forEach(inputs => {
+            inputs.style.color = "white"
+        });
+
+}
+
+function setLightMode() {
+    lightDarkIcon.setAttribute('data-mode', 'sun');
+    let currentMode = lightDarkIcon.getAttribute('data-mode')
+    localStorage.setItem('mode', currentMode)
+    lightDarkIcon.src = "./assets/Images/sun.png";
+    background.style.backgroundImage = lightImage;
+
+    stickyNotes.forEach(notes => {
+        notes.style.filter = "brightness(1)"
+    });
+
+    inputTitles.forEach(inputs => {
+        inputs.style.color = "#F08C7F"
+    });
+}
+
+
+function changeLightDarkMode() {
+
+    if (lightDarkIcon.getAttribute('data-mode') === "sun") {
+        setDarkMode();
+    } else {
+        setLightMode();
+}
+}
