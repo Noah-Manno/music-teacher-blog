@@ -72,6 +72,10 @@ function setDarkMode() {
         lightDarkIcon.src = "./assets/Images/moon.png";
         background.style.backgroundImage = darkImage;
 
+        mainStickyNote.style.filter = 'grayscale(1)'
+
+        mainStickyNoteTitle.style.color = 'black'
+
         stickyNotes.forEach(notes => {
             notes.style.filter = "brightness(.1)"
         });
@@ -96,6 +100,10 @@ function setLightMode() {
     inputTitles.forEach(inputs => {
         inputs.style.color = "#F08C7F"
     });
+
+    mainStickyNote.style.filter = 'grayscale(0)'
+
+    mainStickyNoteTitle.style.color = '#F08C7F'
 }
 
 
