@@ -40,7 +40,7 @@ submitButton.addEventListener("click", function(event) {
     usernameInput.value = "";
     titleInput.value = "";
     blogInput.value = "";
-        window.location.href = "file:///Users/noahmanno/bootcamp/music-teacher-blog/blog.html"     
+        window.location.href = "https://noah-manno.github.io/music-teacher-blog/blog.html"     
     }
 });
 
