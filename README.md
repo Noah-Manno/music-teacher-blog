@@ -50,5 +50,13 @@ Please refer to the LICENSE in the repo.
 
 ## Deployment
 
+<<<<<<< HEAD
 Github Repository: 
 Deployed Link:
+=======
+Github Repository: https://github.com/Noah-Manno/music-teacher-blog
+
+Deployed Link: https://noah-manno.github.io/music-teacher-blog/
+
+
+>>>>>>> fcad77ff5bff8aaf3861666783e38aaeb6684178
