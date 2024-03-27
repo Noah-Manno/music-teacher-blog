@@ -50,5 +50,5 @@ Please refer to the LICENSE in the repo.
 
 ## Deployment
 
-Github Repository:
+Github Repository: 
 Deployed Link:
