@@ -37,3 +37,25 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+footer {
+    min-height: 20vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-portfolio {
+    font-family: var(--font);
+    color: var(--maincolor);
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 32px;
+}
+
+.my-portfolio:hover {
+    background-color: aqua;
+}
