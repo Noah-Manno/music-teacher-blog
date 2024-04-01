@@ -37,7 +37,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* Footer Style */
 footer {
     min-height: 20vh;
     text-align: center;
